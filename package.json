@@ -1,5 +1,5 @@
 {
-  "name": "fast-js",
+  "name": "racewin-js",
   "version": "1.0.0",
   "description": "Writing Fast JavaScript",
   "main": "index.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alsotang/fast-js.git"
+    "url": "git+https://github.com/ncuzp/racewin-js.git"
   },
   "keywords": [
     "fast",
     "performance",
     "benchmark"
   ],
-  "author": "alsotang <alsotang@gmail.com>",
+  "author": "Frand <1273203953@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alsotang/fast-js/issues"
+    "url": "https://github.com/ncuzp/racewin-js/issues"
   },
-  "homepage": "https://github.com/alsotang/fast-js#readme",
+  "homepage": "https://github.com/ncuzp/racewin-js#readme",
   "dependencies": {
     "lodash": "3.10.1",
     "matcha": "0.6.0",
