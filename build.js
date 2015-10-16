@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-var _ = require('lodash');
+var _ = require('underscore');
 var execSync = require('child_process').execSync;
 var matchaCommand = path.join(__dirname, './node_modules/.bin/matcha');
 var multiline = require('multiline');
@@ -11,7 +11,7 @@ var readmeLocate = path.join(__dirname, 'README.md');
 
 var allBenchmarks = fs.readdirSync(benchmarkDir);
 allBenchmarks = allBenchmarks.filter(function (fileName) {
-  return _.endsWith(fileName, '.js');
+  return /\.js$/.test(fileName);
 });
 
 var benchmarkBlockTemplate = _.template(multiline(function () {
