@@ -9,6 +9,6 @@ which way is run faster
 # useage
 
 ```
-node build
+$ node build
 ```
 it will auto write the result to the readme file!
