@@ -1,12 +1,8 @@
 var str = '100';
 
-suite('str_to_int_number', function () {
+suite('str_to_int', function () {
   bench('+str', function () {
     var a = +str;
-  })
-
-  bench('~~str', function () {
-    var a = ~~str
   })
 
   bench('Number(str)', function () {

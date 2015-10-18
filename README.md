@@ -1,28 +1,31 @@
 # racewin-js
 
-:heart_eyes: Writing Fast JavaScript
-
-# env
-
-* platform: OS X 10.10.4
-* cpu: 1.4 GHz Intel Core i5
-* iojs: v2.3.0
-* v8: 4.2.77.20
+which way is run faster
 
 # benchmark
 
-[str_to_int_number.js](benchmark/str_to_int_number.js)
+[split_str.js](benchmark/split_str.js)
 
 ```
-str_to_int_number
-  +str ........................................... 23,994,199 op/s
-  ~~str .......................................... 19,525,207 op/s
-  Number(str) .................................... 43,122,242 op/s
-  parseInt(str) .................................. 45,574,964 op/s
-  parseInt(str, 10) .............................. 64,071,727 op/s
+split_str
+  replace ........................................ 8,366,768 op/s
+  split .......................................... 8,683,255 op/s
+  substring ...................................... 12,253,327 op/s
 ```
 
-# contribute
+[str_to_int.js](benchmark/str_to_int.js)
 
-1. add your test to `benchmark` dir
-1. run `$ make build` and it will update README.md including new test
+```
+str_to_int
+  +str ........................................... 28,811,368 op/s
+  Number(str) .................................... 42,092,204 op/s
+  parseInt(str) .................................. 45,066,584 op/s
+  parseInt(str, 10) .............................. 63,330,513 op/s
+```
+
+# useage
+
+```
+node build
+```
+it will auto write the result to the readme file!

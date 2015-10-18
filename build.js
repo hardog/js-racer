@@ -19,7 +19,7 @@ var benchmarkBlockTemplate = _.template(multiline(function () {
 [<%= filename %>](benchmark/<%= filename %>)
 
 ```
-<%= benchmark_result %>
+<%= result %>
 ```
 */
 }));
@@ -31,22 +31,22 @@ allBenchmarks.forEach(function (fileName) {
 
   // remove unnecessary output
   output = output.split('\n');
-  _.range(5).forEach(function () {
-    output.pop();
-  });
+
+  for(var i = 0; i < 5; i ++){
+    output.pop();    
+  }
+
   output = output.join('\n');
   // END remove unnecessary output
 
-  var bmresult = benchmarkBlockTemplate({
+  result.push(benchmarkBlockTemplate({
     filename: fileName,
-    benchmark_result: output,
-  });
-
-  result.push(bmresult);
+    result: output,
+  }));
 });
 
 var readmeText = readmeTemplate({
-  benchmark_result: result.join('\n\n')
+  result: result.join('\n\n')
 });
 
 fs.writeFileSync(readmeLocate, readmeText);

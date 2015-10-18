@@ -1,7 +1,14 @@
 # racewin-js
 
-:heart_eyes: which way is run faster
+which way is run faster
 
 # benchmark
 
-<%= benchmark_result %>
+<%= result %>
+
+# useage
+
+```
+node build
+```
+it will auto write the result to the readme file!
