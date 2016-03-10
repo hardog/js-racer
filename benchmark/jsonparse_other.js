@@ -10,7 +10,7 @@ suite('jsonparse_other', function () {
     var num = roles.match(/\d+/g);
   })
 
-  bench('split', function () {
+  bench('split(out wild)', function () {
     var num = rolesSplit.split(',');
   })
 })

@@ -9,7 +9,7 @@ var roles = [
 ];
 
 suite('for_each', function () {
-  bench('each', function () {
+  bench('_.each', function () {
     var len = roles.length;
     _.each(roles, function(v, k){
         v.gp;
