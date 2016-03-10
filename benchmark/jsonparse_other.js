@@ -6,12 +6,12 @@ suite('jsonparse_other', function () {
     var num = JSON.parse(roles);
   })
 
-  bench('split', function () {
-    var num = rolesSplit.split(',');
-  })
-
   bench('reg', function () {
     var num = roles.match(/\d+/g);
+  })
+
+  bench('split', function () {
+    var num = rolesSplit.split(',');
   })
 })
 
