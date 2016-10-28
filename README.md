@@ -1,8 +1,8 @@
-# racewin-js
+# Racewin-js
 
 which way is run faster
 
-# benchmark
+# Benchmark
 
 [apply_call.js](benchmark/apply_call.js)
 
@@ -68,7 +68,7 @@ str_to_int
   parseInt(str, 10) .............................. 70,115,709 op/s
 ```
 
-# useage
+# Useage
 
 ```
 $ node build
